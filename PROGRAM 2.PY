@@ -140,3 +140,21 @@ for p in patterns:
     _, c3 = rabin_karp(text_large, p)
 
     print(f"{p:>12} {c1:>10} {c2:>10} {c3:>10}")
+
+
+
+OUTPUT:
+
+Text:    AABAACAADAABAABA
+Pattern: AABA
+
+Naive -> Matches at: [0, 9, 12], Comparisons: 24
+KMP   -> Matches at: [0, 9, 12], Comparisons: 19
+RK    -> Matches at: [0, 9, 12], Comparisons: 12
+
+   Pattern         Naive           KMP            RK
+----------------------------------------------------
+        AB          9985          9998          3012
+      ABCD          9987         10001          1254
+    ABCDAB          9985          9998           643
+  ABCDABCD          9984          9997           322
