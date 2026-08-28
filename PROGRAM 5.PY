@@ -79,3 +79,20 @@ for size in [10, 100, 1000, 10000]:
     formula = 3 * size // 2 - 2
 
     print(f"{size:>8} {dc:>12} {naive:>14} {formula:>16}")
+
+
+
+OUTPUT:
+
+
+Array: [3, 1, 7, 4, 9, 2, 8, 5, 6, 0]
+Min: 0, Max: 9
+D&C Comparisons: 13
+Naive Comparisons: 18
+
+      Size      DC Comps   Naive Comps   Formula 3n/2-2
+-------------------------------------------------------
+        10            13            18               13
+       100           148           198              148
+      1000          1498          1998             1498
+     10000         14998         19998            14998
