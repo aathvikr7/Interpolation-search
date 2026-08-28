@@ -100,3 +100,19 @@ print(f"Found at index: {idx}, Comparisons: {comps}")
 print()
 
 performance_analysis()
+
+
+
+OUTPUT:
+
+Array: [2, 5, 10, 15, 23, 35, 48, 60, 75, 90, 105, 120]
+Searching for: 35
+Found at index: 5, Comparisons: 2
+
+      Size    IS Time(ms)    BS Time(ms)   IS Comparisons   BS Comparisons
+--------------------------------------------------------------------------
+      1000         0.0021         0.0035                3               10
+      5000         0.0025         0.0042                3               13
+     10000         0.0028         0.0048                4               14
+     50000         0.0031         0.0061                4               16
+    100000         0.0035         0.0068                5               17
